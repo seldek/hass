@@ -69,7 +69,12 @@ sun:
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
-    name: Dark Sky
+    name: Dark Sky Std
+    mode: hourly
+  - platform: darksky
+    api_key: !secret darksky_api_key
+    name: Dark Sky Tage
+    mode: daily
 
 # Sensors
 sensor:
